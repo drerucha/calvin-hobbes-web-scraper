@@ -14,3 +14,11 @@ Troubleshooting:
 - That line looks like this: `time.sleep(2)`
 
 This script was working as of March 2019, but the structure of the GoComics website could change at any time and cause this script to fail
+
+**Update:** I recently learned about `robots.txt` files, and the one for GoComics says
+```
+User-agent: *
+Disallow:
+```
+
+Pretty sure that means they don't want scripts scraping their website, so take that into account before using (or not using) this thing
